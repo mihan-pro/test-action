@@ -1,0 +1,8 @@
+  name: test action
+  description: run npm test command
+  runs:
+    using: 'docker'
+    image: 'Dockerfile'
+  branding:
+    icon: activity
+  author: mihan-pro
