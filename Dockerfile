@@ -1,7 +1,7 @@
 FROM node:alpine
 
-RUN apk add --no-cashe \
-     bash
+# Install bash
+RUN apk add --no-cache bash
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
