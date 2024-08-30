@@ -1,6 +1,7 @@
 FROM node:latest
 
-RUN apk add --no-cashe bash
+RUN apk add --no-cashe \
+     bash
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
