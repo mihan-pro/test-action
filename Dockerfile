@@ -6,7 +6,10 @@ COPY entrypoint.sh /usr/local/bin/entrypoint.sh
 
 WORKDIR /usr/src/app
 COPY package*.json ./
-RUN ls
+RUN npm i
+COPY . .
+RUN ls -l
+
 
 CMD ["npm", "run", "test"]
 
