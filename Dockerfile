@@ -8,6 +8,6 @@ WORKDIR /usr/src/app
 COPY package*.json ./
 RUN ls
 
-CMD: ['npm', 'run', 'test']
+CMD ["npm", "run", "test"]
 
 ENTRYPOINT ["entrypoint.sh"]
